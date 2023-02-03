@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>interview_questions</title>
+</head>
+<body>
+   <script>
+		<!-- var str=[5,10,"ram",20,"bala",40,"anand"]; -->
+				<!-- var v=[]; -->
+				<!-- for(i=0;i<str.length;i++){ -->
+					<!-- var name=str[i]; -->
+					<!-- var str1=typeof(name); -->
+					<!-- if(str1!="string"){ -->
+						  <!-- v.push(str[i]); -->
+						<!-- } -->
+				<!-- } -->
+				<!-- console.log(v);	 -->
+			
+				<!-- var aa=[12,"+",3,"+",7]; -->
+				<!-- var d=[]; -->
+				<!-- for(i=0;i<aa.length;i++){ -->
+					<!-- var num=aa[i]; -->
+					<!-- var num1=typeof(num); -->
+					<!-- if(num1!="string"){ -->
+						<!-- d.push(aa[i]); -->
+					<!-- } -->
+					
+					<!-- } -->
+					<!-- console.log(d); -->
+					<!-- console.log(d[0]); -->
+					
+					
+	//shuffle method
+	
+	function fun(shuffle) {
+			let len = shuffle.length,
+				i;
+			for (i = len - 1; i > 0;i--) {
+				let random = Math.floor(Math.random() * (i + 1) );
+				var tem = shuffle[i];
+				shuffle[i] = shuffle[random];
+				shuffle[random] = tem;
+			}
+		}
+		let a = [1,2,3,4,5];
+		fun(a);
+		console.log(a);
+		
+		
+		<!-- function shuffle(arra1) { -->
+    <!-- var ctr = arra1.length, temp, index; -->
+
+
+<!-- // While there are elements in the array -->
+    <!-- while (ctr > 0) { -->
+<!-- // Pick a random index -->
+        <!-- index = Math.floor(Math.random() * ctr); -->
+<!-- // Decrease ctr by 1 -->
+        <!-- ctr--; -->
+<!-- // And swap the last element with it -->
+        <!-- temp = arra1[ctr]; -->
+        <!-- arra1[ctr] = arra1[index]; -->
+        <!-- arra1[index] = temp; -->
+    <!-- } -->
+    <!-- return arra1; -->
+<!-- } -->
+<!-- var myArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; -->
+<!-- console.log(shuffle(myArray)); -->
+					
+	</script>
+</body>
+</html>
