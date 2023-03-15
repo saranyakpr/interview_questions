@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>dropdown</title>
+	<style>
+	*{
+	  cursor:pointer; 
+	}
+	   .list-hover ul{
+	   display:none;
+	   
+	   }
+	   .list-hover:hover .second{
+	   display:block;
+	   }
+	   .main .first{
+	      display:none;
+	   }
+	   .main:hover .first{
+	      display:block;
+	   }
+	   <!-- .active{ -->
+	      <!-- display:block; -->
+	   <!-- } -->
+	</style>
+</head>
+<body>
+   
+   <li class='main' id='main1'	><a>dropdown</a>
+      <ul class='first' id='drop'>
+	     <li><a>dropdown1</a></li>
+		 <li class="list-hover"><a>dropdown2</a>
+		    <ul class='second'>
+			   <li><a>dropdown1</a></li>
+			   <li><a>dropdown1</a></li>
+			   <li><a>dropdown1</a></li>
+			</ul>
+		 </li>	
+		 <li><a>dropdown3</a></li>
+		 <li><a>dropdown4</a></li>
+		 <li><a>dropdown5</a></li>
+	  </ul>
+   </li>
+   
+   
+   
+   
+   
+   
+   <script>
+   
+      <!-- let main1 = document.getElementById('main1'); -->
+	  <!-- let dropdown = document.getElementById('drop'); -->
+	  
+	  <!-- main1.addEventListener('click', ()=>{ -->
+	     <!-- dropdown.classList.toggle('active'); -->
+	  <!-- }) -->
+	  
+   
+   </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-eqiv="X-UA-compatible" content="IE=Rdge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>revise</title>
+</head>
+<body>
+   <section>
+      <form class='form' name='formName' onsubmit='return(myFun())' action='./main.html'>
+	     <h2>Login</h2>
+		 <input id='username' type='text' placeholder='username or email'/>
+		 <input id='password' type='password' placeholder='password'/>
+		 <button type='submit'>Submit</button>
+	  </form>
+   </section>
+   <script>
+	  
+	  function myFun(){
+	     var username = document.getElementById('username').value;
+	  var password = document.getElementById('password').value;
+	     if(username == ''){
+		    alert('enter username');
+			document.formName.username.focus();
+			return false;
+		 }
+		 else if(!isNaN(username)){
+		    alert('enter username alphabets only');
+			document.formName.username.focus();
+			return false;
+		 }
+		 else if(password === ''){
+		    alert('enter password');
+			document.formName.password.focus();
+			return false;
+		 }
+		 else if(password === ''){
+		    alert('enter password');
+			document.formName.password.focus();
+			return false;
+		 }
+		 else if(password.length < 6){
+		    alert('enter password atleast 6 characters');
+			document.formName.password.focus();
+			return false;
+		 }
+		 return true;
+	  }
+   </script>
+</body>
+</html>
